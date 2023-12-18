@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 44021515}
   - component: {fileID: 44021514}
   - component: {fileID: 44021513}
-  - component: {fileID: 44021512}
+  - component: {fileID: 44021516}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -218,28 +218,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &44021512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44021511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e244c6d7abeb7be479abc5c619cfc1ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  jumpForce: 0
-  groundLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  cameraContainer: {fileID: 0}
-  minXLook: 0
-  maxXLook: 0
-  lookSensitivity: 0
-  canLook: 1
 --- !u!54 &44021513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -306,6 +284,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44021516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44021511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7fbef8e4dd81c46892492dc54336f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health:
+    curValue: 0
+    maxValue: 100
+    startValue: 100
+    regenRate: 1
+    decayRate: 0
+    uiBar: {fileID: 1985168287}
+  hunger:
+    curValue: 0
+    maxValue: 500
+    startValue: 400
+    regenRate: 0
+    decayRate: 2
+    uiBar: {fileID: 290302167}
+  stamina:
+    curValue: 0
+    maxValue: 100
+    startValue: 100
+    regenRate: 5
+    decayRate: 0
+    uiBar: {fileID: 6053881}
+  noHungerHealthDecay: 2
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &135313280
 GameObject:
   m_ObjectHideFlags: 0
