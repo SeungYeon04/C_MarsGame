@@ -144,8 +144,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 50
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4377be940d63ab54eabcee1e762e4785, type: 2}
-  m_sharedMaterial: {fileID: -6464250110584870708, guid: 4377be940d63ab54eabcee1e762e4785, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -222,9 +222,9 @@ GameObject:
   - component: {fileID: 2783302212849597366}
   - component: {fileID: 4035082215254593055}
   - component: {fileID: 5312488502694476238}
-  - component: {fileID: 7155396740449235207}
   - component: {fileID: 2389493805612829836}
   - component: {fileID: 2997875496882299805}
+  - component: {fileID: 7050140823139099181}
   m_Layer: 0
   m_Name: ItemSlot
   m_TagString: Untagged
@@ -292,23 +292,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7155396740449235207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8441557058277209269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d843e9292e2fbe141a8fee9f54ad9974, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 2389493805612829836}
-  icon: {fileID: 8052607271149646489}
-  quatityText: {fileID: 4382419491188279479}
-  index: 0
-  equipped: 0
 --- !u!114 &2389493805612829836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +336,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7155396740449235207}
+      - m_Target: {fileID: 7050140823139099181}
         m_TargetAssemblyTypeName: ItemSlotUI, Assembly-CSharp
         m_MethodName: OnButtonClick
         m_Mode: 1
@@ -380,3 +363,20 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &7050140823139099181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8441557058277209269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d592cf3e19ca1b240bd429bea5f0e697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 2389493805612829836}
+  icon: {fileID: 8052607271149646489}
+  quatityText: {fileID: 4382419491188279479}
+  index: 0
+  equipped: 0
