@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum ItemType
-{ 
+{
     Resource,
     Equipable,
     Consumable
 }
+
 public enum ConsumableType
-{ 
+{
     Hunger,
     Health
 }
+
 [System.Serializable]
 public class ItemDataConsumable
 {
@@ -20,8 +22,7 @@ public class ItemDataConsumable
     public float value;
 }
 
-[CreateAssetMenu(fileName ="Item", menuName="New Item")]
-
+[CreateAssetMenu(fileName = "Item", menuName = "New Item")]
 public class ItemData : ScriptableObject
 {
     [Header("Info")]
@@ -37,4 +38,7 @@ public class ItemData : ScriptableObject
 
     [Header("Consumable")]
     public ItemDataConsumable[] consumables;
+
+    [Header("Equip")]
+    public GameObject equipPrefab;
 }
