@@ -5568,7 +5568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2732361051548662820, guid: 8c5cf693ee1826d4bbaa8eb357231823, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4727519564389868123, guid: 8c5cf693ee1826d4bbaa8eb357231823, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5641,6 +5641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: orb05_blue
       objectReference: {fileID: 0}
+    - target: {fileID: 1190641688003679989, guid: aeb2ff42a6e3b6043a03d721d6ac286e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5615646835568124092, guid: aeb2ff42a6e3b6043a03d721d6ac286e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5706,6 +5710,10 @@ PrefabInstance:
     - target: {fileID: 4137557447836101970, guid: f7a72838862547d4c87fb1fe63508936, type: 3}
       propertyPath: m_Name
       value: wand02_blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137557447836101970, guid: f7a72838862547d4c87fb1fe63508936, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8287161424799198652, guid: f7a72838862547d4c87fb1fe63508936, type: 3}
       propertyPath: m_RootOrder
