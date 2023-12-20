@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 40
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2760350416332195653
 Transform:
@@ -119,9 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e3380600da90df49bb6b0e2cad4ea71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemToGive: {fileID: 11400000, guid: 01fc73a1e6497124783e9c1c706037d1, type: 2}
-  quantityPerHit: 1
-  capacity: 0
+  ResourceObject: {fileID: 1486353415940327812}
+  ResourceData: {fileID: 11400000, guid: c5c1d0762ca06af4d84f9694e98ecde2, type: 2}
 --- !u!208 &2911993894578375129
 NavMeshObstacle:
   m_ObjectHideFlags: 0
