@@ -11,7 +11,7 @@ public class Footsteps : MonoBehaviour
     public float footstepRate;
     private float lasgFootstepTime;
 
-    private bool isGrounded;
+    //private bool isGrounded;
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class Footsteps : MonoBehaviour
     private void Update()
     {
 
-        if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f && isGrounded)
+        if (Mathf.Abs(_rigidbody.velocity.y) < 0.1f )
         {
             if (_rigidbody.velocity.magnitude > footstepThreshold)
             {
@@ -34,18 +34,18 @@ public class Footsteps : MonoBehaviour
             }
         }
     }
-    private bool IsGrounded()
-    {
+    //private bool IsGrounded()
+    //{
 
-        PlayerController playerController = GetComponent<PlayerController>();
+    //    PlayerController playerController = GetComponent<PlayerController>();
 
-        if (playerController != null)
-        {
-            return playerController.isGrounded;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    //    if (playerController != null)
+    //    {
+    //        return playerController.isGrounded;
+    //    }
+    //    else
+    //    {
+    //        return false;
+    //    }
+    //}
 }
