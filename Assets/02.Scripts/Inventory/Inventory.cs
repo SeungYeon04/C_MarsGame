@@ -219,7 +219,16 @@ public class Inventory : MonoBehaviour
 
     public void OnEquipButton()
     {
+        if (uiSlots[curEquipIndex].equipped)
+        {
+            UnEquip(curEquipIndex);
+        }
+        uiSlots[selectedItemIndex].equipped = true;
+        curEquipIndex = selectedItemIndex;
+        EquipManager.instance.EquipNew(selectedItem.item);
+        UpdateUI();
 
+        SelectItem(selectedItemIndex);
     }
 
     void UnEquip(int index)
