@@ -51,6 +51,13 @@ public class PlayerController : MonoBehaviour
             CameraLook();
         }
     }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Water"))
+        { 
+            gameObject.transform.position = new Vector3(0, 0, 0);
+        }
+    }
 
     private void Move()
     {

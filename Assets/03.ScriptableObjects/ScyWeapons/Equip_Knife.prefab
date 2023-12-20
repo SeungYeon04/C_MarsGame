@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3311107908927266042}
-  - component: {fileID: 3573064511288288991}
-  - component: {fileID: 3393327743734980782}
+  - component: {fileID: -8970865002245448509}
   m_Layer: 9
   m_Name: Equip_Knife
   m_TagString: Untagged
@@ -32,30 +31,9 @@ Transform:
   m_Children:
   - {fileID: 7790478426221084288}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3573064511288288991
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2408657693458560285}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 64408865ac1a0cd44a77eaa15aea8f05, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3393327743734980782
+--- !u!114 &-8970865002245448509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,12 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c4a1893c095634ab4c3473d2fb8100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 10
-  attackDistance: 0.5
+  attackRate: 0
+  attackDistance: 0
   doesGatherResources: 0
   doesDealDamage: 0
-  damage: 10
-  useStamina: 2
+  damage: 0
+  useStamina: 0
 --- !u!1 &6889049473751277385
 GameObject:
   m_ObjectHideFlags: 0

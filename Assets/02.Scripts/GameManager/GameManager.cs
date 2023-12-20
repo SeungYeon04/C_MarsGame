@@ -40,12 +40,12 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2f);
-            GameObject instantBear = Instantiate(Bear, Return_RandomPosition(), Quaternion.identity);
             yield return new WaitForSeconds(3f);
+            GameObject instantBear = Instantiate(Bear, Return_RandomPosition(), Quaternion.identity);
+            yield return new WaitForSeconds(5f);
             GameObject instantMonster = Instantiate(Monster, Return_RandomPosition(), Quaternion.identity);
-            Destroy(instantMonster, 10);
-            Destroy(instantBear, 15);
+            Destroy(instantMonster, 40);
+            Destroy(instantBear, 90);
         }
 
     }

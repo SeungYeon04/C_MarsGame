@@ -30,7 +30,7 @@ Transform:
   m_Children:
   - {fileID: 2621559091925596593}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8085311118625116832
 GameObject:
@@ -126,8 +126,8 @@ MonoBehaviour:
   walkSpeed: 1
   runSpeed: 4
   dropOnDeath:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 842df0ffd3028fc4891a81fb55da3287, type: 2}
+  - {fileID: 11400000, guid: 842df0ffd3028fc4891a81fb55da3287, type: 2}
   aiState: 0
   detectDistance: 5
   safeDistance: 8
