@@ -18,27 +18,19 @@ public class EquipTool : Equip
     private Animator animator;
     private Camera camera;
 
-    public float useStamina;
-
     private void Awake()
     {
         camera = Camera.main;
         animator = GetComponent<Animator>();
     }
 
-    public override void OnAttackInput(PlayerConditions conditions)
+    public override void OnAttackInput()
     {
         if (!attacking)
         {
-            //attacking = true;
-            //animator.SetTrigger("Attack");
-            //Invoke("OnCanAttack", attackRate);
-            if (conditions.UseStamina(useStamina))
-            {
-                attacking = true;
-                animator.SetTrigger("Attack");
-                Invoke("OnCanAttack", attackRate);
-            }
+            attacking = true;
+            animator.SetTrigger("Attack");
+            Invoke("OnCanAttack", attackRate);
         }
     }
 
