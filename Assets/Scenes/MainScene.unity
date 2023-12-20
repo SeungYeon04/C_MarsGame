@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2458ba500b1004c4fa179983bede71f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeObject: {fileID: 9071911965681383750}
+  rangeObject: {fileID: 435594329}
   Monster: {fileID: 3917144024433485452, guid: 652ca47f2efb2d147b456fe1f2404a69, type: 3}
   Bear: {fileID: 3018225063077760124, guid: 65765f21751db484c8ce62c06a842646, type: 3}
 --- !u!4 &408746192
