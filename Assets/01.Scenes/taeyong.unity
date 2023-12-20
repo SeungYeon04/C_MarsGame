@@ -3762,6 +3762,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 550049185492995367, guid: 11f8d4729501d4444ae0a214d106ded9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 960884430}
+    - targetCorrespondingSourceObject: {fileID: 550049185492995367, guid: 11f8d4729501d4444ae0a214d106ded9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 960884431}
   m_SourcePrefab: {fileID: 100100000, guid: 11f8d4729501d4444ae0a214d106ded9, type: 3}
 --- !u!4 &960884428 stripped
 Transform:
@@ -3794,6 +3797,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &960884431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960884429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c4a1893c095634ab4c3473d2fb8100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRate: 0
+  attackDistance: 0
+  doesGatherResources: 0
+  doesDealDamage: 0
+  damage: 0
+  useStamina: 0
 --- !u!1 &966663852
 GameObject:
   m_ObjectHideFlags: 0
@@ -8117,6 +8138,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2408657693458560285, guid: 97c94468d3fac944bb2bca75eae38078, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2084890076}
+    - targetCorrespondingSourceObject: {fileID: 2408657693458560285, guid: 97c94468d3fac944bb2bca75eae38078, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2084890077}
   m_SourcePrefab: {fileID: 100100000, guid: 97c94468d3fac944bb2bca75eae38078, type: 3}
 --- !u!4 &2084890074 stripped
 Transform:
@@ -8149,6 +8173,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2084890077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084890075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c4a1893c095634ab4c3473d2fb8100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRate: 0
+  attackDistance: 0
+  doesGatherResources: 0
+  doesDealDamage: 0
+  damage: 0
+  useStamina: 0
 --- !u!1 &2101482824
 GameObject:
   m_ObjectHideFlags: 0
@@ -8924,16 +8966,43 @@ PrefabInstance:
       propertyPath: m_Name
       value: Equip_Axe
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5120766262218738005, guid: 6231fb004af5b7f4993169fba2c64513, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6351816095670551712, guid: 6231fb004af5b7f4993169fba2c64513, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7910309091894894933}
   m_SourcePrefab: {fileID: 100100000, guid: 6231fb004af5b7f4993169fba2c64513, type: 3}
 --- !u!4 &7910309091894894931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2094377912142053881, guid: 6231fb004af5b7f4993169fba2c64513, type: 3}
   m_PrefabInstance: {fileID: 7910309091894894930}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7910309091894894932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6351816095670551712, guid: 6231fb004af5b7f4993169fba2c64513, type: 3}
+  m_PrefabInstance: {fileID: 7910309091894894930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7910309091894894933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7910309091894894932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c4a1893c095634ab4c3473d2fb8100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRate: 0
+  attackDistance: 0
+  doesGatherResources: 0
+  doesDealDamage: 0
+  damage: 0
+  useStamina: 0
 --- !u!1 &8485230414392710034
 GameObject:
   m_ObjectHideFlags: 0
