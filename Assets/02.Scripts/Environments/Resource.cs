@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Resource : MonoBehaviour, IGatherable
+public class Resource : MonoBehaviour
 {
     public GameObject ResourceObject;
 
@@ -10,8 +10,6 @@ public class Resource : MonoBehaviour, IGatherable
     public ItemData itemToGive;
     public int quantityPerHit = 1;
     public int capacity;
-
-
 
     public void InitResource()
     {
