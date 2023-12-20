@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799313959552877682}
   - component: {fileID: 1660608996227148380}
+  - component: {fileID: 1714543241712730445}
   m_Layer: 9
   m_Name: Equip_Sword
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550049185492995367}
-  m_LocalRotation: {x: 0.18959515, y: 0.4356567, z: 0.046839498, w: 0.87867117}
+  m_LocalRotation: {x: 0.18959513, y: 0.43565667, z: 0.046839494, w: 0.8786711}
   m_LocalPosition: {x: 0.952, y: 2.9, z: 0.599}
   m_LocalScale: {x: 150, y: 150, z: 150}
   m_ConstrainProportionsScale: 0
@@ -32,8 +33,8 @@ Transform:
   - {fileID: 1662893327758050563}
   - {fileID: 8520921204023383951}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 17, y: 55, z: 15}
 --- !u!114 &1660608996227148380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,12 +47,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c4a1893c095634ab4c3473d2fb8100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 0
-  attackDistance: 0
+  attackRate: 0.8
+  attackDistance: 1
   doesGatherResources: 0
-  doesDealDamage: 0
-  damage: 0
-  useStamina: 0
+  doesDealDamage: 1
+  damage: 10
+  useStamina: 15
+--- !u!95 &1714543241712730445
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550049185492995367}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7cb6e5f4b249d95419f9bc793c54d05d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5098276890214913206
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5098276890214913206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.00565, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
