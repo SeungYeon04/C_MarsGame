@@ -1,12 +1,31 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Resource : MonoBehaviour
+public class Resource : MonoBehaviour, IGatherable
 {
+    public GameObject ResourceObject;
+
+    public ResourceData ResourceData;
+
     public ItemData itemToGive;
     public int quantityPerHit = 1;
     public int capacity;
+
+
+
+    public void InitResource()
+    {
+        quantityPerHit = ResourceData.quantityPerHit;
+        capacity = ResourceData.capacity;
+    }
+
+    IEnumerator ActivateAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        ResourceObject.SetActive(true);
+        InitResource();
+    }
 
     public void Gather(Vector3 hitPoint, Vector3 hitNormal)
     {
@@ -18,6 +37,9 @@ public class Resource : MonoBehaviour
         }
 
         if (capacity <= 0)
-            Destroy(gameObject);
+        {
+            gameObject.SetActive(false);
+            ActivateAfterDelay(10.0f);
+        }
     }
 }
