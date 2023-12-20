@@ -23,9 +23,11 @@ public class EquipManager : MonoBehaviour
 
     public void OnAttackInput(InputAction.CallbackContext context)
     {
+        Debug.Log("Å¬¸¯");
         if (context.phase == InputActionPhase.Performed && curEquip != null && controller.canLook)
         {
-            curEquip.OnAttackInput();
+            curEquip.OnAttackInput(conditions);
+            Debug.Log("Å¬¸¯µÊ");
         }
     }
 
