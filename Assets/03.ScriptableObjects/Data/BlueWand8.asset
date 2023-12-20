@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ffa0748f5142d54fa28478dfaf1401d, type: 3}
-  m_Name: Sword
+  m_Name: BlueWand8
   m_EditorClassIdentifier: 
-  displayName: "\uCE7C"
-  description: "\uACF5\uACA9\uC6A9 \uCE7C\uC785\uB2C8\uB2E4"
+  displayName: "\uACF5\uACA9\uC6D0\uC11D\uCC3D(\uB178\uB780\uC0C9)"
+  description: "\uB178\uB780\uC0C9 \uCC3D\uC785\uB2C8\uB2E4"
   type: 1
-  icon: {fileID: 21300000, guid: 4f2f320a217307a48a107491b1d17ebb, type: 3}
-  dropPrefab: {fileID: 1985847843449223492, guid: 273919f254e475545878926581f238f5, type: 3}
+  icon: {fileID: 21300000, guid: 4f4b3730cb977d144b41fcd8e14597c6, type: 3}
+  dropPrefab: {fileID: 9145430144656375023, guid: 31db683ef6bef3449aed8da27f99a542, type: 3}
   canStack: 0
-  maxStackAmount: 0
+  maxStackAmount: 12
   consumables: []
-  equipPrefab: {fileID: 550049185492995367, guid: 11f8d4729501d4444ae0a214d106ded9, type: 3}
+  equipPrefab: {fileID: 0}
