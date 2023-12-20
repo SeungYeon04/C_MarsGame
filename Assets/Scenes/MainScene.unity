@@ -5526,6 +5526,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6930679466590578258, guid: 124f7d5f8fa9df84e964db426a29e0de, type: 3}
+      propertyPath: capacity
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6494,7 +6498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1486233938515544391, guid: 7e2489d0158f76542831c90c43cfce2e, type: 3}
       propertyPath: capacity
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6723963886717574459, guid: 7e2489d0158f76542831c90c43cfce2e, type: 3}
       propertyPath: m_Name
@@ -9130,6 +9134,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 136606793}
     m_Modifications:
+    - target: {fileID: 1400181560612486223, guid: 9c6e7058b92ecf344af9b147fb77d5cd, type: 3}
+      propertyPath: capacity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400181560612486223, guid: 9c6e7058b92ecf344af9b147fb77d5cd, type: 3}
+      propertyPath: itemToGive
+      value: 
+      objectReference: {fileID: 11400000, guid: 01fc73a1e6497124783e9c1c706037d1, type: 2}
     - target: {fileID: 1486353415940327812, guid: 9c6e7058b92ecf344af9b147fb77d5cd, type: 3}
       propertyPath: m_Name
       value: Resource_Tree01
