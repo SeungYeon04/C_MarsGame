@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody _rigidbody;
     public static PlayerController instance;
+    internal bool isGrounded;
 
     private void Awake()
     {
